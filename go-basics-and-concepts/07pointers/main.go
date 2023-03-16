@@ -22,4 +22,21 @@ func main() {
 
 	//So pointers makes it a guarantee, that no matter what you are doing the operation with those values, those operations are actually performed on the values, not on the copies of those values.
 
+	slice1 := []int{2, 3, 4}
+	fmt.Println("orig slice: ", slice1)
+	changeslice(slice1)
+	fmt.Println("modified via function: ", slice1)
+	var pointr *[]int
+	pointr = &slice1
+	changesliceviapointer(pointr)
+	fmt.Println(slice1)
+}
+
+func changeslice(recslice []int) {
+	recslice[0] = 500
+}
+
+func changesliceviapointer(modifyslice *[]int) {
+	fmt.Println(modifyslice)
+	(*modifyslice)[1] = 255
 }

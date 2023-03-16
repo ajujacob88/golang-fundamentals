@@ -30,7 +30,7 @@ func main() {
 
 	vegList = append(vegList[:2]) // this will remove elements from position 2 onwards
 	fmt.Println(vegList)
-
+	fmt.Println("Now 1:5")
 	vegList = append(vegList[1:5]) //the last range(5th position) is always no inclusive and the first range(1st position) is inclusive
 	fmt.Println(vegList)
 

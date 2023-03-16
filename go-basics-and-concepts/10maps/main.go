@@ -33,4 +33,11 @@ func main() {
 	for _, value := range languages {
 		fmt.Printf("The value is %v \n", value)
 	}
+
+	// MAP IS ALSO MUTABLE DATATYPE
+	var map1 map[string]int = map[string]int{"hello": 2, "hi": 3}
+	map2 := map1
+	map2["aju"] = 35
+	fmt.Println(map1)
+	fmt.Println(map2)
 }
