@@ -60,3 +60,14 @@ func main() {
 	fmt.Println(courses)
 
 }
+
+/*
+The Go programming language specification does not guarantee any specific order of iteration when ranging over a map.
+Therefore, the order of the printed output may vary between different Go compilers or even between different runs of the same code.
+
+However, in some Go compilers, including the official Go compiler and some third-party compilers, the implementation of the map type iterates over the keys in a sorted order by default.
+This means that when you print the map, the keys will appear in alphabetical order.
+
+It is important to note that the order of the keys is not guaranteed by the language specification and should not be relied upon in your code.
+If you need to iterate over the map in a specific order, you should sort the keys explicitly before iterating over them.
+*/
