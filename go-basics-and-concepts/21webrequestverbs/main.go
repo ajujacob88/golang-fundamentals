@@ -27,14 +27,16 @@ func PerformGetRequest() {
 
 	content, _ := ioutil.ReadAll(response.Body)
 	//content is in the byte format, so need to convert to string to read it
-	//fmt.Println("content of the url is:", string(content))
+	fmt.Println("content of the url is:", string(content))
 	//another way of converting byte to string
-	var responseString strings.Builder
+	//we can use any method, below method using Strings package is having more functionalities, so use according to the use case
 
+	var responseString strings.Builder
 	byteCount, _ := responseString.Write(content)
 	fmt.Println("byte count is: ", byteCount)
-	fmt.Println("Data in string format is", responseString.String()) //this is good because we are holding always the raw data, not converting
+	fmt.Println("Data in string format is", responseString.String()) //this is also good because we are holding always the raw data, and we are using String package and we can do several operations with that
 	fmt.Println(responseString.Len())
+
 }
 
 func checkNilErr(err error) {
