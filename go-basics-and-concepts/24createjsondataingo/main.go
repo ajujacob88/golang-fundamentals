@@ -53,3 +53,7 @@ func EncodeJson() {
 
 //Now going to consume json data,  decode json data by golang ,, the json data to server sent here is going to receive and decode that json data.
 //https://www.youtube.com/watch?v=a96veXdifys&list=PLRAV69dS1uWQGDQoBYMZWKjzuhCaOnBpa&index=32
+
+func DecodeJson() {
+
+}
