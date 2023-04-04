@@ -16,6 +16,7 @@ func helloWorldPage(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", helloWorldPage) //starting our server,,,"/" means passing the root passing the root path for the page
+	//http.HandleFunc("/aju", helloWorldPage)
 	//http.ListenAndServe(":8000", nil)
 	http.ListenAndServe("", nil) //passing empty port no meas passing default port no which is 80,,starting the server by calling listen and serve and passing the port no, not passing port no means default port no 80 will be pased, http.ListenAndServe(addr:"", handler: nil)
 }
