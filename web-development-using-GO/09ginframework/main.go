@@ -2,7 +2,9 @@
 
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
 	r := gin.Default()
@@ -15,6 +17,9 @@ func main() {
 	r.GET("/aju", GetAju)
 
 	r.POST("/aju", PostAju)
+
+	r.DELETE("/aju", DeleteAju)
+
 	r.Run() // listen and serve on 0.0.0.0:8080   //http://localhost:8080/ping
 
 }
@@ -60,3 +65,36 @@ func PostAju(c *gin.Context) {
 	}
 
 }
+
+func DeleteAju(c *gin.Context) {
+	starType := c.Query("type")
+	starName, ok := ajuRatings[starType]
+	if !ok {
+		c.JSON(404, gin.H{
+			starType: "",
+		})
+		return
+
+	}
+	delete(ajuRatings, starType)
+	c.JSON(200, gin.H{
+		starType: starName,
+	})
+
+}
+
+/*
+
+package main
+import "github.com/gin-gonic/gin"
+func IndexHandler(c *gin.Context){
+   c.JSON(200, gin.H{
+       "message": "hello world",
+   })
+}
+func main() {
+   router := gin.Default()
+   router.GET("/", IndexHandler)
+   router.Run()
+}
+*/
