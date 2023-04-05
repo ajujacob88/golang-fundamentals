@@ -1,5 +1,5 @@
-//not fully completed,, validation not done, just login only
-
+// not fully completed,, validation not done, just login only
+// chatgpt and https://articles.wesionary.team/session-management-in-golang-gin-framework-using-redis-with-e-1f17b6980924
 package main
 
 import (
