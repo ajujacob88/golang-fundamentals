@@ -27,8 +27,8 @@ func indexHandle(w http.ResponseWriter, r *http.Request) {
 }
 
 var userDataBase = map[string]string{
-	"aju":    "mypassword",
-	"ganesh": "password",
+	"aju":       "mypassword",
+	"brototype": "kochi",
 }
 
 func loginHandle(w http.ResponseWriter, r *http.Request) {
@@ -36,7 +36,7 @@ func loginHandle(w http.ResponseWriter, r *http.Request) {
 	username := r.FormValue("username")
 	password := r.FormValue("password")
 
-	if userDataBase[username] == password { //or we can simply write if username == "Aju" && password =="passw"
+	if userDataBase[username] == password && password != "" { //or we can simply write if username == "Aju" && password =="passw",, password != "" is written because, if required is written in html(line 33 and line 36 in html) then no need of this, but if required is not written, in html then if a username is only entered, then also it will enter into the login page..
 		//if matching, create a session using icza package, also import the package for doing this
 		sess := session.NewSessionOptions(&session.SessOptions{
 			CAttrs: map[string]interface{}{
