@@ -27,7 +27,8 @@ func indexHandle(w http.ResponseWriter, r *http.Request) {
 }
 
 var userDataBase = map[string]string{
-	"aju": "mypassword",
+	"aju":    "mypassword",
+	"ganesh": "password",
 }
 
 func loginHandle(w http.ResponseWriter, r *http.Request) {
