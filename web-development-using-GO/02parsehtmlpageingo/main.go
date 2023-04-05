@@ -9,7 +9,7 @@ import (
 
 var templ *template.Template
 
-func init() {
+func init() { //The init() function is reserved and is used for specific reasons. This function is defined to take no arguments and return nothing. This function is meant to run before any other piece of code – even before the main() function, which supposedly is the first function from where execution of our program begins. The init() function serves some specific purposes such as to initialize a specific state of the application.
 	templ = template.Must(template.ParseGlob("template/*.html"))
 
 }

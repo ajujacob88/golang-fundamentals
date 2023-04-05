@@ -1,5 +1,5 @@
-//https://www.youtube.com/watch?v=YBBX1k9lDKw&list=PLve39GJ2D71yyECswi0lVaBm_gbnDRR9v&index=6
-
+// https://www.youtube.com/watch?v=YBBX1k9lDKw&list=PLve39GJ2D71yyECswi0lVaBm_gbnDRR9v&index=6
+// i skipped the htttps and substitution part(important one),embedded functions in the video, which is also useful lateron..
 package main
 
 import (
@@ -13,7 +13,7 @@ func login(w http.ResponseWriter, r *http.Request) {
 	t, err := template.ParseFiles(fileName) //also manually change the import to "html/template" instead of "text/template"
 	if err != nil {
 
-		fmt.Println("Error when parsing file")
+		fmt.Println("Error when parsing file - aju")
 		return
 		//panic(err)
 	}
