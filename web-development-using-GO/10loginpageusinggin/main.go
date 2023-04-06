@@ -50,3 +50,36 @@ func main() {
 	// Start server
 	router.Run(":8000")
 }
+
+/*
+func loginHandle(c *gin.Context) {
+	// Get form values
+	username := c.PostForm("username")
+	password := c.PostForm("password")
+
+	if userDataBase[username] == password && password != "" {
+		// Get session
+		session := sessions.Default(c)
+
+		// Set session value
+		session.Set("username", username)
+
+		// Save session
+		err := session.Save()
+		if err != nil {
+			c.String(http.StatusInternalServerError, "Error saving session")
+			return
+		}
+
+		// Redirect to welcome page
+		c.Redirect(http.StatusSeeOther, "/welcome")
+	} else {
+		// If username and password do not match, render login page with error message
+		data := gin.H{
+			"error": "Invalid Username and Password Entered",
+		}
+		c.HTML(http.StatusOK, "index.html", data)
+	}
+}
+
+*/

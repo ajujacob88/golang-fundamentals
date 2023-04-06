@@ -3,6 +3,7 @@
 package main
 
 import (
+	"fmt"
 	"net/http"
 	"text/template"
 )
@@ -11,7 +12,7 @@ var templ *template.Template
 
 func init() { //The init() function is reserved and is used for specific reasons. This function is defined to take no arguments and return nothing. This function is meant to run before any other piece of code – even before the main() function, which supposedly is the first function from where execution of our program begins. The init() function serves some specific purposes such as to initialize a specific state of the application.
 	templ = template.Must(template.ParseGlob("template/*.html"))
-
+	fmt.Println(templ)
 }
 
 func handleFunc(w http.ResponseWriter, r *http.Request) {
