@@ -57,7 +57,7 @@ func main() {
 	// router.SetFuncMap(template.FuncMap{
 	// 	"upper": strings.ToUpper,
 	// })
-	router.Static("/assets", "./assets")
+	router.Static("/template", "./template")
 	router.LoadHTMLGlob("template/*.html")
 
 	router.GET("/", func(c *gin.Context) {
@@ -71,7 +71,7 @@ func main() {
 			"content": "This is an about page...",
 		})
 	})
-	router.Run("localhost:7000")
+	router.Run("localhost:8000")
 
 }
 
