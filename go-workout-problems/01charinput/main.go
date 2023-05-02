@@ -11,6 +11,9 @@ func main() {
 	if err != nil {
 		fmt.Println("Error check")
 	}
-	fmt.Printf("The character entered is %c", character)
+	fmt.Printf("The character entered is %c\n", character)
+
+	var late x int
+	//fmt.Println(x)
 
 }
