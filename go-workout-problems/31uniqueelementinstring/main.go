@@ -6,7 +6,7 @@ import "fmt"
 
 func main() {
 
-	var string1 = "aabbcdd"
+	var string1 = "aabbcddee"
 	fmt.Println(uniqueElement(string1))
 }
 
