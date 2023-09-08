@@ -37,24 +37,6 @@ func main() {
 
 	fmt.Printf("%f\n", decimal)
 	fmt.Printf("%v\n", decimal)
-
-	//ARITHMETIC OPERATIONS
-
-	ratio := 1.0 / 10
-	fmt.Printf("%.60f\n", ratio)
-
-	ratio = 3 / 2
-	fmt.Println(ratio)
-
-	ratio = 3.0 / 2
-	fmt.Println(ratio)
-
-	fmt.Println(2 + 2*5/2)
-
-	fmt.Println(1 + 5 - 3*10/2)
-
-	num := 10
-	num += 2
-	fmt.Println(num)
+	fmt.Printf("%g\n", decimal) //%g will eliminate unnecessary fractional parts
 
 }
