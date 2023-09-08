@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	//actually english letter is of 1 byte, for other languages, each characters can be 1 to  4 bytes long., len() gives the total byte count only, but for english its ok, since each letter are 1 byte long, but for other languages utf8 is reliable, so always utf8 is reliable to fing the no of characters of a string
+	//actually english letter is of 1 byte, for other languages, each characters can be 1 to  4 bytes long., len() gives the total byte count only, but for english its ok, since each letter are 1 byte long, but for other languages utf8 is reliable, so always utf8 is reliable to fing the no of characters of a string. All string literals in go are utf8 encoded
 	englishName := "aju jacob.."
 	fmt.Println(len(englishName))
 
