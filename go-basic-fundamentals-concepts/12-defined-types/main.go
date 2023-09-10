@@ -10,7 +10,7 @@ func main() {
 	fmt.Printf("type of dur is %T \n", dur)
 
 	var dur2 int = 5
-	fmt.Printf("type of dur is %T \n", dur2)
+	fmt.Printf("typee of dur is %T \n", dur2)
 
 	//result := dur * dur2
 
