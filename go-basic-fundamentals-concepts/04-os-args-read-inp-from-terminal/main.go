@@ -6,6 +6,11 @@ import (
 )
 
 func main() {
+
+	if len(os.Args) < 3 {
+		fmt.Println("please enter a value in the console eg: go run main.go 100 200 300")
+		return
+	}
 	fmt.Println(os.Args)
 	fmt.Printf("%#v\n", os.Args)
 

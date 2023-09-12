@@ -7,6 +7,11 @@ import (
 )
 
 func main() {
+
+	if len(os.Args) < 2 {
+		fmt.Println("please enter a value in the console eg: go run main.go 100")
+		return
+	}
 	arg := os.Args[1]
 
 	feet, _ := strconv.ParseFloat(arg, 64)
