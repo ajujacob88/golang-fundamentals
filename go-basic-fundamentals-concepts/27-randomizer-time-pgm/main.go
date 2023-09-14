@@ -23,4 +23,13 @@ func main() {
 	}
 	fmt.Println()
 
+	max := 25
+	//use the below instead of depreciated rand.seed
+	// Seed your custom random generator with a specific seed value.
+	myRand := rand.New(rand.NewSource(time.Now().UnixNano()))
+
+	// Use your custom random generator to generate random numbers.
+	randomNumber := myRand.Intn(max) + 1
+	fmt.Println("Random Number:", randomNumber)
+
 }
