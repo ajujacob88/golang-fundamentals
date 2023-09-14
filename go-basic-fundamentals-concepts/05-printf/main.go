@@ -1,4 +1,5 @@
 // printf - prints formatted output
+//sprintf - returns formatted string instead of printing it
 
 package main
 
@@ -38,5 +39,11 @@ func main() {
 	fmt.Printf("%f\n", decimal)
 	fmt.Printf("%v\n", decimal)
 	fmt.Printf("%g\n", decimal) //%g will eliminate unnecessary fractional parts
+
+	//SPRINTF
+	//sprinf works just like printf. However, sprintf returns a formatted string instead of printing it.
+
+	aju := fmt.Sprintf("similar to printf, but returns formatted string instead of printing it, %v", 25)
+	fmt.Println(aju)
 
 }
