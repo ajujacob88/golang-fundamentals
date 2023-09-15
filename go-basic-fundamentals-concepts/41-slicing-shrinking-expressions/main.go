@@ -129,4 +129,9 @@ func main() {
 	fmt.Println(len(trimmed3))
 	fmt.Println(cap(trimmed3))
 
+	fmt.Println(slice[2:5])
+	fmt.Println(slice)
+	fmt.Println(slice[9:9])
+	fmt.Println(slice[:9])
+
 }
