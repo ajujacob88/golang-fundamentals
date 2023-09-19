@@ -15,4 +15,11 @@ func main() {
 
 	fmt.Println(runeliteral)
 
+	start, stop := 'A', 'Z' //rune literals.. actually they are numeric unicode code points
+
+	fmt.Println(start, stop) //65 is the code point of A, 90 is the code point of Z....(like ASCII values, in utf8 it is called as code points)
+
+	var num int
+	num = 'A' // we can assign rune literals (like 'A', 'B' etc) to int or any numeric type because rune literals are typeless,, each gets converted to int here. They can be assigned to a variable with any numeric type
+	fmt.Println(num)
 }
