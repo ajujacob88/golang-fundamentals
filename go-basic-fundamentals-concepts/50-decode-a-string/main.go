@@ -67,4 +67,7 @@ func main() {
 	copy(word[:size], bytes.ToUpper(word[:size]))
 	fmt.Println(string(word))
 
+	//Again, slicing a string is very efficient and cheap.. it reuses the same backing array
+	//converting  string to bytes orrune is a costlier operation as it crreates new backing array.. so do it only if it is necesary..so unless necessary, do not convert them
+
 }
