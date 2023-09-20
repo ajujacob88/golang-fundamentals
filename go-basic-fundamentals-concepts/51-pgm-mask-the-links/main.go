@@ -51,4 +51,6 @@ func main() {
 	}
 	fmt.Println(string(buffer))
 
+	//also there is a unicode package...eg:= unicode.ToUpper()
+
 }
