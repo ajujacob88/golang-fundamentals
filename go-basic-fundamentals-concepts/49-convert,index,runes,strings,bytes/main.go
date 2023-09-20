@@ -87,4 +87,5 @@ func main() {
 	// string literals ar automatically encoded in utf-8,, only assume that the string literals are encoded in utf8
 	//we can store anything in a string value, beause it only contains bytes, its a byte slice,, so on a string value we can even store an image, a music or sound and so on,, so every string value is not a urf 8 string value, only the string literals are utf8 encoded by defualt.
 	//single byte runes are also called ASCII runes
+	//strings are immutable, means we cannot change them, only we can create new values
 }
