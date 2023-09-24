@@ -18,7 +18,7 @@ func main() {
 
 		word := strings.ToLower(in.Text())
 		if len(word) > 2 {
-			uniquewords[strings.ToLower(in.Text())] = true //the words will be unique words, because the maps key can have  only unique value, if 2 same words come, then only will be accepted as key,, = ture this will makes the map a set
+			uniquewords[word] = true //the words will be unique words, because the maps key can have  only unique value, if 2 same words come, then only will be accepted as key,, = ture this will makes the map a set
 		}
 	}
 
