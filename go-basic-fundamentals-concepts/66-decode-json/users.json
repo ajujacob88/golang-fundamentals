@@ -1,0 +1,18 @@
+[
+	{
+		"username": "Inac"
+	},
+	{
+		"username": "Gadly",
+		"Permissions": {
+			"admin": true,
+			"superadmin": false
+		}
+	},
+	{
+		"username": "Eagle",
+		"Permissions": {
+			"write": true
+		}
+	}
+]

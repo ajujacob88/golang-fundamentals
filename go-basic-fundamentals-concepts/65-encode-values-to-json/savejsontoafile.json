@@ -1,0 +1,24 @@
+[{Inac 123 map[]} {Gadly 456 map[admin:true superadmin:false]} {Eagle 789 map[write:true]}]
+
+json encoded data is:
+ [{"username":"Inac"},{"username":"Gadly","Permissions":{"admin":true,"superadmin":false}},{"username":"Eagle","Permissions":{"write":true}}]
+
+json  encoded data in indented way is:
+ [
+	{
+		"username": "Inac"
+	},
+	{
+		"username": "Gadly",
+		"Permissions": {
+			"admin": true,
+			"superadmin": false
+		}
+	},
+	{
+		"username": "Eagle",
+		"Permissions": {
+			"write": true
+		}
+	}
+]

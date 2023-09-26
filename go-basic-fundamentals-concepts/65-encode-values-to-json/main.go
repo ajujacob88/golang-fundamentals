@@ -1,4 +1,5 @@
 // json is a structured data exchange format.. In go encoding is also called as marshaling and decode is also called unmarshal
+// finally to save json to a file: eg:=  go run main.go >savedusers.json   //means save the output of the pgm to this file
 package main
 
 import (
@@ -32,9 +33,10 @@ import (
 // 	Permissions permissions
 // }
 
-// now adding json tags
+// now adding json tags.. this json field tags are mostly used for controlling the encoding and deoding behaviour
 type permissions map[string]bool
 
+// here json: is the jey tag,, only the json package will read this tag,, json packageonly reads a field tag, if it starts with: json: ,,, other than json: there are various other field tags are there as well for thier respective packages
 type user struct {
 	Name     string `json:"username"` //here while encoding , i need to change the json encode field name to username, so i can use this field tag
 	Password string `json:"-"`        //for seurity reasons, we dont need to encode this exported password field, then we can use json tak like this `json:"-`, then this field wont be encoded to json
