@@ -11,7 +11,7 @@ func main() {
 	slices()
 
 	fmt.Println("\n-----Now Passing Maps")
-	maps()
+	maps() //map element is not an addressable value,, map is addressable(means we can take the address), but inside the map the map elements are not addressable(means the address of key and value is not accessible)
 
 	fmt.Println("\n-----Now Passing Structs")
 	structs()
