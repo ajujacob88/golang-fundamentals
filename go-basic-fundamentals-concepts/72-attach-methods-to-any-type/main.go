@@ -27,7 +27,27 @@ func main() {
 
 	items = append(items, &gta, &nfs)
 
-	for _, it := range items {
-		it.print()
-	}
+	// for _, it := range items {
+	// 	it.print()
+	// }
+
+	my := list(items)
+	my.print()
+
+	my = nil
+	my.print()
+
+	mobydick := book{title: "Moby Dick", price: 525}
+	abc := book{title: "abc", price: 230}
+	xyz := book{title: "xfdg", price: 100}
+
+	var bookcollect []*book
+	bookcollect = append(bookcollect, &mobydick, &abc, &xyz)
+
+	mybooks := booklist(bookcollect)
+	mybooks.print()
+
+	mybooks.discount()
+	mybooks.print()
+
 }
