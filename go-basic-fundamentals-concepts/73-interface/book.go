@@ -9,7 +9,7 @@ type book struct {
 
 func (b *book) print() { //Here (b book) is called the receiver...the method automatically receives the value of a type
 
-	//fmt.Println("Title:", b.title, "price:", b.price)
+	//fmt.Println("Titlee:", b.title, "price:", b.price)
 	fmt.Println("Titlee:", b.title, "price:", b.price.dollarstring())
 }
 
