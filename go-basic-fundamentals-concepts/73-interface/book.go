@@ -18,4 +18,4 @@ func (b *book) discount(d float64) {
 	return
 }
 
-//while using a type as pointerr , it is a convention that writing all the methods of that type as pointer,,, if a type is passing as values, then all the methods of that type should be written like passing values... its a convention
+//while using a type as pointerrd , it is a convention that writing all the methods of that type as pointer,,, if a type is passing as values, then all the methods of that type should be written like passing values... its a convention

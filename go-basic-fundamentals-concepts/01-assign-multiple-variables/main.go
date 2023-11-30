@@ -13,9 +13,11 @@ func main() {
 	speed, now = 100, time.Now()
 	fmt.Println(speed, now)
 
-	speed, distance, currentTime := 150, 25, time.Now()
+	speed, distance, currentTime := 150, 250, time.Now()
 	fmt.Println(speed, distance, currentTime)
 
 	speed, distance = distance, speed
-	fmt.Println(speed, distance)
+	n, err := fmt.Println(speed, distance)
+
+	fmt.Println("n is", n, "err is", err)
 }
