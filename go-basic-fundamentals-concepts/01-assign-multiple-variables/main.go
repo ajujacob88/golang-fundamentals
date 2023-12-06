@@ -19,5 +19,5 @@ func main() {
 	speed, distance = distance, speed
 	n, err := fmt.Println(speed, distance)
 
-	fmt.Println("n is", n, "err is", err)
+	fmt.Println("n iss", n, "err is", err)
 }
